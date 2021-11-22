@@ -1,0 +1,13 @@
+@charset "UTF-8";
+/* Add your custom CSS declarations below  */
+.centered {
+  position: absolute;
+  top: 60%;
+}
+footer {
+    padding-top: 20px;
+    background-color: #f8f9fa;
+}
+.container {
+    padding-bottom: 10px;
+}

@@ -1,0 +1,826 @@
+<!doctype html>
+<html lang="en">
+	<head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Pointe shoe accessories page of The Dance Shoppe">
+        <meta name="author" content="Aly Coppage">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Pointe Shoe Accessories</title>
+
+		<!-- Bootstrap v5.0.0-beta3 -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+		<link href="css/custom.css" rel="stylesheet" type="text/css" media="screen">
+        
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <style>
+            img {
+                max-width: 100%;
+                height: auto; 
+            }
+            .card {
+                padding: 0px;
+                margin: auto;
+            }
+            
+      </style>
+	</head>
+
+	<body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="images/logo.png" alt="logo for The Dance Shoppe" style="max-height: 100px;"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="leotards.html">Leotards</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuShoes" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Shoes
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuShoes">
+                                <li><a class="dropdown-item" href="slippers.html">Ballet Slippers</a></li>
+                                <li><a class="dropdown-item" href="pointe.html">Pointe Shoes</a></li>
+                                <li><a class="dropdown-item active" href="accessories.html">Pointe Shoe Accessories</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuSkirts" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Skirts and Tutus
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuSkirts">
+                                <li><a class="dropdown-item" href="skirts.html">Skirts</a></li>
+                                <li><a class="dropdown-item" href="tutus.html">Tutus</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="warmups.html">Warm-Ups</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tights.html">Tights</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuCart" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <span class="material-icons">shopping_cart</span>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuCart">
+                                <li><a class="dropdown-item" href="skirts.html"><img src="images/leotards/lulli-cami-front.jpeg" alt="jacket"><p>Lulli Camisole<br>61.16 USD</p></a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container">
+            <!-- Breadcrumbs -->
+            <nav style="--bs-breadcrumb-divider: '>'; padding-top: 10px;" aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                    <li class="breadcrumb-item active" aria-current="page">Shoes</li>
+                    <li class="breadcrumb-item active" aria-current="page">Pointe Shoe Accessories</li>
+                </ol>
+            </nav><!-- End Breadcrumbs -->
+            <!-- Jumbotron -->
+            <div class="jumbotron">
+                <h1 class="display-4">Pointe Shoe Accessories</h1>
+                <p class="lead">Shop our wide range of accessories for pointe work, ranging from jet glue to stitch kits to toe tape and beyond!</p>
+                <hr class="my-4">
+            </div> <!-- End Jumbotron -->
+            <!-- Card Group -->
+            <div class="row row-cols-2 row-cols-lg-4 row-cols-md-3 g-4">
+                <!-- Bloch Mesh Card -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="images/accessories/bloch-mesh.jpeg" alt="mesh pointe shoe elastic">
+                        <div class="card-body">
+                            <h5 class="card-title">Bloch Mesh Elastic</h5>
+                            <h6 class="card-text text-muted">$6.78</h6>
+                            <div class="text-center">
+                                <!-- Button trigger modal -->
+                                <button class="btn btn-light rounded-0" data-bs-toggle="modal" data-bs-target="#blochMeshModal">QUICK SHOP</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Bloch Mesh Modal -->
+                    <div class="modal fade" id="blochMeshModal" tabindex="-1" aria-labelledby="blochMeshModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="blochMeshModalLabel">Quick Shop</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <img src="images/accessories/bloch-mesh.jpeg" class="col-6" alt="Mesh pointe shoe elastic">
+                                        <div class="col-6">
+                                            <h3>Bloch Mesh Elastic</h3>
+                                            <p>These mesh elastics are great for all pointe shoes!</p> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary rounded-0" data-bs-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-light rounded-0" data-bs-dismiss="modal" data-bs-target="#blochMeshAddedModal" data-bs-toggle="modal">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Bloch Mesh Modal -->                   
+                    <!-- Bloch Mesh Added Modal -->
+                    <div class="modal fade" id="blochMeshAddedModal" tabindex="-1" aria-labelledby="blochMeshAddedModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="blochMeshAddedModalLabel">Added to Cart</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <div class="row">
+                                        <h3>Add to cart successful!</h3>
+                                        <p>Bloch Mesh Elastic has been added to your cart.</p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="d-grid gap-2 col-12">
+                                        <button type="button" class="btn btn-light rounded-0" data-bs-dismiss="modal">Keep Shopping</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Bloch Mesh Added Modal -->
+                </div>
+                <!-- Bunheads Pads Card -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="images/accessories/bunheads-propads.jpeg" alt="Bunheads toe pads">
+                        <div class="card-body">
+                            <h5 class="card-title">Bunheads Pro Pads</h5>
+                            <h6 class="card-text text-muted">$27.00</h6>
+                            <div class="text-center">
+                                <!-- Button trigger modal -->
+                                <button class="btn btn-light rounded-0" data-bs-toggle="modal" data-bs-target="#bunheadsPadsModal">QUICK SHOP</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Bunheads Pads Modal -->
+                    <div class="modal fade" id="bunheadsPadsModal" tabindex="-1" aria-labelledby="bunheadsPadsModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="bunheadsPadsModalLabel">Quick Shop</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <img src="images/accessories/bunheads-propads.jpeg" class="col-6" alt="Bunheads toe pads">
+                                        <div class="col-6">
+                                            <h3>Bunheads Pro Pads</h3>
+                                            <p>These toe pads are great to wear in your pointe shoes</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary rounded-0" data-bs-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-light rounded-0" data-bs-dismiss="modal" data-bs-target="#bunheadsPadAddedModal" data-bs-toggle="modal">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Bunheads Pad Modal -->
+                    <!-- Bunheads Pad Added Modal -->
+                    <div class="modal fade" id="bunheadsPadAddedModal" tabindex="-1" aria-labelledby="bunheadsPadsAddedModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="bunheadsPadsAddedModalLabel">Added to Cart</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <div class="row">
+                                        <h3>Add to cart successful!</h3>
+                                        <p>Bunheads Pro Pads have been added to your cart.</p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="d-grid gap-2 col-12">
+                                        <button type="button" class="btn btn-light rounded-0" data-bs-dismiss="modal">Keep Shopping</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Bunheads Pads Added Modal -->
+                </div>
+                <!-- Bunheads Spaces Card -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="images/accessories/bunheads-spacers.jpeg" alt="Toe spacers">
+                        <div class="card-body">
+                            <h5 class="card-title">Bunheads Toe Spacers</h5>
+                            <h6 class="card-text text-muted">$11.00</h6>
+                            <div class="text-center">
+                                <!-- Button trigger modal -->
+                                <button class="btn btn-light rounded-0" data-bs-toggle="modal" data-bs-target="#bunheadsSpacerModal">QUICK SHOP</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Bunheads Spacers Modal -->
+                    <div class="modal fade" id="bunheadsSpacerModal" tabindex="-1" aria-labelledby="bunheadsSpacerModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="bunheadsSpacerModalLabel">Quick Shop</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <img src="images/accessories/bunheads-spacers.jpeg" class="col-6" alt="Toe Spacers">
+                                        <div class="col-6">
+                                            <h3>Bunheads Toe Spacers</h3>
+                                            <p>These toe spacers are great in any pointe shoes!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary rounded-0" data-bs-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-light rounded-0" data-bs-dismiss="modal" data-bs-target="#bunheadsSpacerAddedModal" data-bs-toggle="modal">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Bunheads Spacer Modal -->
+                    <!-- Bunheads Spacer Added Modal -->
+                    <div class="modal fade" id="bunheadsSpacerAddedModal" tabindex="-1" aria-labelledby="bunheadsSpacerAddedModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="bunheadsSpacerAddedModalLabel">Added to Cart</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <div class="row">
+                                        <h3>Add to cart successful!</h3>
+                                        <p>Bunheads Spacers have been added to your cart.</p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="d-grid gap-2 col-12">
+                                        <button type="button" class="btn btn-light rounded-0" data-bs-dismiss="modal">Keep Shopping</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Bunheads Spacer Added Modal -->
+                </div>
+                <!-- Bunheads Stitch Card -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="images/accessories/bunheads-stitchkit.jpeg" alt="stitch kit">
+                        <div class="card-body">
+                            <h5 class="card-title">Bunheads Stitch Kit</h5>
+                            <h6 class="card-text text-muted">$9.50</h6>
+                            <div class="text-center">
+                                <!-- Button trigger modal -->
+                                <button class="btn btn-light rounded-0" data-bs-toggle="modal" data-bs-target="#bunheadsStitchModal">QUICK SHOP</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Bunheads Stitch Modal -->
+                    <div class="modal fade" id="bunheadsStitchModal" tabindex="-1" aria-labelledby="bunheadsStitchModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="bunheadsStitchModalLabel">Quick Shop</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <img src="images/accessories/bunheads-stitchkit.jpeg" class="col-6" alt="Stitch Kit">
+                                        <div class="col-6">
+                                            <h3>Bunheads Stitch Kit</h3>
+                                            <p>This stitch kit is great for sewing pointe shoes!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary rounded-0" data-bs-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-light rounded-0" data-bs-dismiss="modal" data-bs-target="#bunheadsStitchAddedModal" data-bs-toggle="modal">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- Bunheads Stitch Modal -->
+                    <!-- Bunheads Stitch Added Modal -->
+                    <div class="modal fade" id="bunheadsStitchAddedModal" tabindex="-1" aria-labelledby="bunheadsStitchAddedModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="bunheadsStitchAddedModalLabel">Added to Cart</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <div class="row">
+                                        <h3>Add to cart successful!</h3>
+                                        <p>Bunheads Stitch Kit has been added to your cart.</p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="d-grid gap-2 col-12">
+                                        <button type="button" class="btn btn-light rounded-0" data-bs-dismiss="modal">Keep Shopping</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Bunheads Stitch Added Modal -->
+                </div>
+                <!-- Gaynor Dots Card -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="images/accessories/gaynor-dots.jpeg" alt="Protective dancer dots">
+                        <div class="card-body">
+                            <h5 class="card-title">Gaynor Minden Dancer's Dots</h5>
+                            <h6 class="card-text text-muted">$9.99</h6>
+                            <div class="text-center">
+                                <!-- Button trigger modal -->
+                                <button class="btn btn-light rounded-0" data-bs-toggle="modal" data-bs-target="#gaynorDotsModal">QUICK SHOP</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Gaynor Dots Modal -->
+                    <div class="modal fade" id="gaynorDotsModal" tabindex="-1" aria-labelledby="gaynorDotsModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="gaynorDotsModalLabel">Quick Shop</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <img src="images/accessories/gaynor-dots.jpeg" class="col-6" alt="Protective dancer dots">
+                                        <div class="col-6">
+                                            <h3>Gaynor Minden Dancer's Dots</h3>
+                                            <p>These protective dots are a great accessories for any dancer!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary rounded-0" data-bs-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-light rounded-0" data-bs-dismiss="modal" data-bs-target="#gaynorDotsAddedModal" data-bs-toggle="modal">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Gaynor Dots Modal -->
+                    <!-- Gaynor Dots Added Modal -->
+                    <div class="modal fade" id="gaynorDotsAddedModal" tabindex="-1" aria-labelledby="gaynorDotsAddedModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="gaynorDotsAddedModalLabel">Added to Cart</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <div class="row">
+                                        <h3>Add to cart successful!</h3>
+                                        <p>Gaynor Minden Dancer's Dots have been added to your cart.</p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="d-grid gap-2 col-12">
+                                        <button type="button" class="btn btn-light rounded-0" data-bs-dismiss="modal">Keep Shopping</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Gaynor Dots Added Modal -->
+                </div>
+                <!-- Gaynor Elastic Card -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="images/accessories/gaynor-elastic.jpeg" alt="pointe shoe elastic">
+                        <div class="card-body">
+                            <h5 class="card-title">Gaynor Minden Elastic</h5>
+                            <h6 class="card-text text-muted">$2.65</h6>
+                            <div class="text-center">
+                                <!-- Button trigger modal -->
+                                <button class="btn btn-light rounded-0" data-bs-toggle="modal" data-bs-target="#gaynorElasticModal">QUICK SHOP</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Gaynor Elastic Modal -->
+                    <div class="modal fade" id="gaynorElasticModal" tabindex="-1" aria-labelledby="gaynorElasticModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="gaynorElasticModalLabel">Quick Shop</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <img src="images/accessories/gaynor-elastic.jpeg" class="col-6" alt="Pointe shoe elastic">
+                                        <div class="col-6">
+                                            <h3>Gaynor Minden Elastic</h3>
+                                            <p>These elastics are great for any pair of pointe shoes!</p> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary rounded-0" data-bs-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-light rounded-0" data-bs-dismiss="modal" data-bs-target="#gaynorElasticAddedModal" data-bs-toggle="modal">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Gaynor Elastic Modal -->
+                    <!-- Gaynor Added Modal -->
+                    <div class="modal fade" id="gaynorElasticAddedModal" tabindex="-1" aria-labelledby="gaynorElasticAddedModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="gaynorElasticAddedModalLabel">Added to Cart</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <div class="row">
+                                        <h3>Add to cart successful!</h3>
+                                        <p>Gaynor Minden Elastic have been added to your cart.</p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="d-grid gap-2 col-12">
+                                        <button type="button" class="btn btn-light rounded-0" data-bs-dismiss="modal">Keep Shopping</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Gaynor Elastic Added Modal -->
+                </div>
+                <!-- Gaynor Tape Card -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="images/accessories/gaynor-tape.jpeg" alt="Toe tape">
+                        <div class="card-body">
+                            <h5 class="card-title">Gaynor Minden Toe Tape</h5>
+                            <h6 class="card-text text-muted">$9.82</h6>
+                            <div class="text-center">
+                                <!-- Button trigger modal -->
+                                <button class="btn btn-light rounded-0" data-bs-toggle="modal" data-bs-target="#gaynorTapeModal">QUICK SHOP</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Gaynor Tape Modal -->
+                    <div class="modal fade" id="gaynorTapeModal" tabindex="-1" aria-labelledby="gaynorTapeModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="gaynorTapeModalLabel">Quick Shop</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <img src="images/accessories/gaynor-tape.jpeg" class="col-6" alt="Toe tape">
+                                        <div class="col-6">
+                                            <h3>Gaynor Minden Toe Tape</h3>
+                                            <p>This toe tape is great for protection in pointe shoes!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary rounded-0" data-bs-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-light rounded-0" data-bs-dismiss="modal" data-bs-target="#gaynorTapeAddedModal" data-bs-toggle="modal">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Gaynor Tape Modal -->
+                    <!-- Gaynor Tape Added Modal -->
+                    <div class="modal fade" id="gaynorTapeAddedModal" tabindex="-1" aria-labelledby="gaynorTapeAddedModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="gaynorTapeAddedModalLabel">Added to Cart</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <div class="row">
+                                        <h3>Add to cart successful!</h3>
+                                        <p>Gaynor Minden Toe Tape has been added to your cart.</p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="d-grid gap-2 col-12">
+                                        <button type="button" class="btn btn-light rounded-0" data-bs-dismiss="modal">Keep Shopping</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Gaynor Tape Added Modal -->
+                </div>
+                <!-- Bunheads Card -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="images/accessories/jet-glue.jpeg" alt="Jet glue">
+                        <div class="card-body">
+                            <h5 class="card-title">Jet Glue</h5>
+                            <h6 class="card-text text-muted">$11.00</h6>
+                            <div class="text-center">
+                                <!-- Button trigger modal -->
+                                <button class="btn btn-light rounded-0" data-bs-toggle="modal" data-bs-target="#jetGlueModal">QUICK SHOP</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Jet Glue Modal -->
+                    <div class="modal fade" id="jetGlueModal" tabindex="-1" aria-labelledby="jetGlueModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="jetGlueModalLabel">Quick Shop</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <img src="images/accessories/jet-glue.jpeg" class="col-6" alt="Jet Glue">
+                                        <div class="col-6">
+                                            <h3>Nikolay Nova Pointe Shoes</h3>
+                                            <p>This jet glue can help extend the life of your pointe shoes!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary rounded-0" data-bs-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-light rounded-0" data-bs-dismiss="modal" data-bs-target="#jetGlueAddedModal" data-bs-toggle="modal">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Jet Glue Modal -->
+                    <!-- Jet Glue Added Modal -->
+                    <div class="modal fade" id="jetGlueAddedModal" tabindex="-1" aria-labelledby="jetGlueAddedModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="jetGlueAddedModalLabel">Added to Cart</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <div class="row">
+                                        <h3>Add to cart successful!</h3>
+                                        <p>Jet Glue has been added to your cart.</p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="d-grid gap-2 col-12">
+                                        <button type="button" class="btn btn-light rounded-0" data-bs-dismiss="modal">Keep Shopping</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Jet Glue Added Modal -->
+                </div>
+                <!-- Nikolay Ribbon Card -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="images/accessories/nikolay-ribbon.jpeg" alt="pointe shoe ribbon">
+                        <div class="card-body">
+                            <h5 class="card-title">Nikolay Ribbon</h5>
+                            <h6 class="card-text text-muted">$3.92</h6>
+                            <div class="text-center">
+                                <!-- Button trigger modal -->
+                                <button class="btn btn-light rounded-0" data-bs-toggle="modal" data-bs-target="#nikolayRibbonModal">QUICK SHOP</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Nikolay Ribbon Modal -->
+                    <div class="modal fade" id="nikolayRibbonModal" tabindex="-1" aria-labelledby="nikolayRibbonModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="nikolayRibbonModalLabel">Quick Shop</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <img src="images/accessories/nikolay-ribbon.jpeg" class="col-6" alt="Nikolay Ribbon">
+                                        <div class="col-6">
+                                            <h3>Russian Pointe Rubin Pointe Shoes</h3>
+                                            <p>These ribbons are great for any pointe shoes!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary rounded-0" data-bs-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-light rounded-0" data-bs-dismiss="modal" data-bs-target="#nikolayRibbonAddedModal" data-bs-toggle="modal">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Nikolay Ribbon Modal -->
+                    <!-- Nikolay Ribbon Added Modal -->
+                    <div class="modal fade" id="nikolayRibbonAddedModal" tabindex="-1" aria-labelledby="nikolayRibbonAddedModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="nikolayRibbonAddedModalLabel">Added to Cart</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <div class="row">
+                                        <h3>Add to cart successful!</h3>
+                                        <p>Nikolay Ribbon has been added to your cart.</p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="d-grid gap-2 col-12">
+                                        <button type="button" class="btn btn-light rounded-0" data-bs-dismiss="modal">Keep Shopping</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Nikolay Ribbon Added Modal -->
+                </div>
+                <!-- Pillows Wool Card -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="images/accessories/pillows-for-pointes-lambswool.jpeg" alt="lamb's wool">
+                        <div class="card-body">
+                            <h5 class="card-title">Pillows for Pointes Lamb's Wool</h5>
+                            <h6 class="card-text text-muted">$6.25</h6>
+                            <div class="text-center">
+                                <!-- Button trigger modal -->
+                                <button class="btn btn-light rounded-0" data-bs-toggle="modal" data-bs-target="#pillowsWoolModal">QUICK SHOP</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pillows Wool Modal -->
+                    <div class="modal fade" id="pillowsWoolModal" tabindex="-1" aria-labelledby="pillowsWoolModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="pillowsWoolModalLabel">Quick Shop</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <img src="images/accessories/pillows-for-pointes-lambswool.jpeg" class="col-6" alt="Lamb's wool">
+                                        <div class="col-6">
+                                            <h3>Pillows for Pointes Lamb's Wool</h3>
+                                            <p>This lamb's wool is great for comfort in any pair of pointe shoes!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary rounded-0" data-bs-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-light rounded-0" data-bs-dismiss="modal" data-bs-target="#pillowsWoolAddedModal" data-bs-toggle="modal">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Pillows Wool Modal -->
+                    <!-- Pillows Wool Added Modal -->
+                    <div class="modal fade" id="pillowsWoolAddedModal" tabindex="-1" aria-labelledby="pillowsWoolAddedModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="pillowsWoolAddedModalLabel">Added to Cart</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <div class="row">
+                                        <h3>Add to cart successful!</h3>
+                                        <p>Pillows for Pointes Lamb's Wool has been added to your cart.</p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="d-grid gap-2 col-12">
+                                        <button type="button" class="btn btn-light rounded-0" data-bs-dismiss="modal">Keep Shopping</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Pillows Wool Added Modal -->
+                </div>
+                <!-- Pillows Rosin Card -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img class="card-img-src" src="images/accessories/pillows-for-pointes-rosin.jpeg" alt="Rosin for dancers">
+                        <div class="card-body">
+                            <h5 class="card-title">Pillows for Pointes Rosin</h5>
+                            <h6 class="card-text text-muted">$11.00</h6>
+                            <div class="text-center">
+                                <!-- Button trigger modal -->
+                                <button class="btn btn-light rounded-0" data-bs-toggle="modal" data-bs-target="#pillowsRosinModal">QUICK SHOP</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Pillows Rosin Modal -->
+                    <div class="modal fade" id="pillowsRosinModal" tabindex="-1" aria-labelledby="pillowsRosinModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="pillowsRosinModalLabel">Quick Shop</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <img src="images/accessories/pillows-for-pointes-rosin.jpeg" class="col-6" alt="Dancer's rosin">
+                                        <div class="col-6">
+                                            <h3>Pillows for Pointes Rosin</h3>
+                                            <p>This rosin gives your pointe shoes extra grip!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary rounded-0" data-bs-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-light rounded-0" data-bs-dismiss="modal" data-bs-target="#pillowsRosinAddedModal" data-bs-toggle="modal">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Pillows Rosin Modal -->
+                    <!-- Pillows Rosin Added Modal -->
+                    <div class="modal fade" id="pillowsRosinAddedModal" tabindex="-1" aria-labelledby="pillowsRosinAddedModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="pillowsRosinAddedModalLabel">Added to Cart</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <div class="row">
+                                        <h3>Add to cart successful!</h3>
+                                        <p>Pillows for Pointes Rosin has been added to your cart.</p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="d-grid gap-2 col-12">
+                                        <button type="button" class="btn btn-light rounded-0" data-bs-dismiss="modal">Keep Shopping</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Pillows Rosin Added Modal -->
+                </div>
+                <!-- Prima Soft Card -->
+                <div class="col">
+                    <div class="card h-100">
+                        <img class="card-img-top" src="images/accessories/prima-soft-stretchribbon.jpeg" alt="Stretch Ribbon">
+                        <div class="card-body">
+                            <h5 class="card-title">Prima Soft Stretch Ribbon</h5>
+                            <h6 class="card-text text-muted">$6.31</h6>
+                            <div class="text-center">
+                                <!-- Button trigger modal -->
+                                <button class="btn btn-light rounded-0" data-bs-toggle="modal" data-bs-target="#primaModal">QUICK SHOP</button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Prima Soft Modal -->
+                    <div class="modal fade" id="primaModal" tabindex="-1" aria-labelledby="primaModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="primaModalLabel">Quick Shop</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <div class="row">
+                                        <img src="images/accessories/prima-soft-stretchribbon.jpeg" class="col-6" alt="Stretch ribbon">
+                                        <div class="col-6">
+                                            <h3>Prima Soft Stretch Ribbon</h3>
+                                            <p>This stretch ribbon is great for any pointe shoes!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary rounded-0" data-bs-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-light rounded-0" data-bs-dismiss="modal" data-bs-target="#primaAddedModal" data-bs-toggle="modal">Add to Cart</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Prima Modal -->
+                    <!-- Prima Added Modal -->
+                    <div class="modal fade" id="primaAddedModal" tabindex="-1" aria-labelledby="primaAddedModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="primaAddedModalLabel">Added to Cart</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body text-center">
+                                    <div class="row">
+                                        <h3>Add to cart successful!</h3>
+                                        <p>Prima Soft Stretch Ribbon has been added to your cart.</p>
+                                    </div>
+                                </div>
+                                <div class="modal-footer">
+                                    <div class="d-grid gap-2 col-12">
+                                        <button type="button" class="btn btn-light rounded-0" data-bs-dismiss="modal">Keep Shopping</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End Prima Added Modal -->
+                </div>
+            </div><!-- End Card Group -->
+        </div><!-- Container end -->
+        <footer class="text-center">
+            <p>Need Help? Call us at 1-800-212-1881</p>
+            <p style="font-size: 10px">Photos belong to their respective brands</p> 
+        </footer>
+    </body>
+</html>
